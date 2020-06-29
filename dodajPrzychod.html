@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Home Budget</title>
+	<meta name="description" content="Aplikacja internetowa do zarządzania budżetem rodzinnym. Dzięki niej już nigdy nie będziesz miał problemu z prowadzeniem domowego budżetu.">
+	<meta name="keywords" content="budżet, pieniądze, dom, rodzina, zarządzanie">
+	<meta name="author" content="Bartłomiej Zagórski">
+	
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	
+	<script src="defDate.js" type="text/javascript"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+
+		<header>
+				
+				<h1 class="logo">Home Budget !</h1>
+				
+				<nav id="topnav">
+				
+						<ul class="menu">
+							<li><a href="#">Dodaj przychód</a></li>
+							<li><a href="#">Dodaj wydatek</a></li>
+							<li><a href="#">Przeglądaj bilans</a></li>
+							<li><a href="#">Ustawienia</a></li>
+							<li><a href="HomeBudget.html">Wyloguj się</a></li>
+						</ul>
+				
+				</nav>
+				
+		</header>
+		
+		<main>
+		
+				<article>
+		
+						<div class="intro">
+								<form action="order.php" method="post" enctype="multipart/form-data">
+										<header>
+												<h1>Dodaj przychód</h1>
+										</header>
+										<div class="formElement">
+											<label> Kwota: <input type="number" name="amount" step="0.01" required></label>
+										</div>
+										<div class="formElement">
+											<label> Data: <input type="date" name="date" id="date" required></label>
+										</div>
+										<div class="formElement">
+											
+											<fieldset>
+											
+													<legend> Kategoria </legend>
+													
+															<div><input type="radio" value="1" name="category" checked> Wynagrodzenie</div>
+															<div><input type="radio" value="2" name="category"> Odsetki bankowe</div>
+															<div><input type="radio" value="3" name="category"> Sprzedaż na Allegro</div>
+															<div><input type="radio" value="4" name="category"> Inne</div>
+											
+											</fieldset>
+											
+										</div>
+										<div class="formElement">
+
+												<div><label for="comment">Komentarz:</label></div>
+												<textarea name="comment" id="comment" rows="3" cols="80"></textarea>
+	
+										</div>
+										<div class="formElement">
+										
+												<input type="submit" value="Dodaj"/>
+												<input type="reset" value="Anuluj"/>
+												
+										</div>
+								</form>
+						</div>
+		
+				</article>
+		
+		</main>
+		<footer>
+			<div class="info">Wszelkie prawa zastrzeżone &copy; 2020 Dziękuję za wizytę.</div>
+		</footer>
+
+</body>
+
+</html>
