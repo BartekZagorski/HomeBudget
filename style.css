@@ -186,3 +186,11 @@ input[type=email]:focus
 {
 	resize: none;
 }
+
+.column
+{
+	display: inline-block;
+	width: 200px;
+	margin: 10px;
+	text-align: justify;
+}
