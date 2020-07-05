@@ -158,6 +158,7 @@ input[type=email]:focus
 
 .intro
 {
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	width: 950px;
@@ -193,4 +194,91 @@ input[type=email]:focus
 	width: 200px;
 	margin: 10px;
 	text-align: justify;
+}
+
+.dateRange
+{
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+
+.dateRangeButton
+{
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 190px;
+	background-color: #1c74bd;
+	color: white;
+	padding: 16px;
+	font-size: 19.2px;
+	font-weight: 400;
+	border: none;
+	cursor: pointer;
+	font-family: Times New Roman;
+}
+
+.dateRangeContent
+{
+	width: 300px;
+	right: 0px;
+	position: absolute;
+	display: none;
+	background-color: #0b63ac;
+}
+
+.dateRangeContent .option
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 10px;
+	border-top: 1px dashed #0a2b42;
+	cursor: pointer;
+}
+
+.dateFirstOption a
+{
+	border-top: none;
+}
+
+.dateRange:hover .dateRangeContent
+{
+	display: block;	
+}
+
+.dateRange:hover .dateRangeButton
+{
+	background-color: #0b63ac;
+	color: #0a2b42;
+	border-bottom: 1px dashed #0a2b42;
+}
+
+.dateRangeButton:focus
+{
+	outline: none;
+}
+
+.dateRangeContent .option:hover
+{
+	background-color: #0a529b;
+	color: #0a2b42;
+}
+
+.dateRangeContent .option:focus
+{
+	background-color: #09418a;
+	color: #0a2b42;
+}
+
+#dateSwitch
+{
+	margin-top: 20px;
+	display: none;
+	position: absolute;
+	float: right;
+	width: 400px;
+	text-align: right;
+	right: 0px;
 }
